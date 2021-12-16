@@ -1,23 +1,23 @@
 {
-  "name": "rest-api",
-  "version": "1.0.0",
-  "description": "Learning create REST API'S",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AranBeitia/REST-API.git"
-  },
-  "author": "AranBeitia",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AranBeitia/REST-API/issues"
-  },
-  "homepage": "https://github.com/AranBeitia/REST-API#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.15"
-  }
+	"name": "rest-api",
+	"version": "1.0.0",
+	"description": "Learning create REST API'S",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AranBeitia/REST-API.git"
+	},
+	"author": "AranBeitia",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AranBeitia/REST-API/issues"
+	},
+	"homepage": "https://github.com/AranBeitia/REST-API#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"nodemon": "^2.0.15"
+	}
 }
