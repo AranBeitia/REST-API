@@ -17,6 +17,7 @@
 	},
 	"homepage": "https://github.com/AranBeitia/REST-API#readme",
 	"dependencies": {
+		"body-parser": "^1.19.1",
 		"express": "^4.17.1",
 		"mongoose": "^6.1.2",
 		"nodemon": "^2.0.15"
