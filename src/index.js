@@ -1,7 +1,8 @@
 const express = require('express')
-const router = require('./routes/index.routes')
 const mongoose = require('mongoose')
 const { json, urlencoded } = require('body-parser')
+const clientRouter = require('./routes/client.routes')
+const productRouter = require('./routes/product.routes')
 
 // connect mongo
 mongoose.Promise = global.Promise
@@ -17,7 +18,8 @@ app.use(json())
 app.use(urlencoded({ extended: true }))
 
 // app routes
-app.use(router)
+app.use(clientRouter)
+app.use(productRouter)
 
 // port
 app.listen(5000)
