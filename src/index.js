@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const { json, urlencoded } = require('body-parser')
+const fileUpload = require('express-fileupload')
 const clientRouter = require('./routes/client.routes')
 const productRouter = require('./routes/product.routes')
 
@@ -13,9 +14,11 @@ mongoose.connect('mongodb://127.0.0.1:27017/REST-APIS', {
 // create server
 const app = express()
 
+// middlewares
 //! important: json parser before the routes
 app.use(json())
 app.use(urlencoded({ extended: true }))
+app.use(fileUpload({ createParentPath: true }))
 
 // app routes
 app.use(clientRouter)
