@@ -6,7 +6,7 @@ async function newClient(req, res, next) {
 	try {
 		// almacenar registro
 		await client.save()
-		res.json('Client added correctly')
+		res.json({ message: 'Client added correctly' })
 	} catch (error) {
 		// si hay error, console.log y next
 		next(error)
@@ -43,7 +43,7 @@ async function updateClient(req, res, next) {
 				new: true,
 			}
 		)
-		res.json(client)
+		res.json({ message: 'Client updated correctly', client })
 	} catch (error) {
 		next(error)
 	}

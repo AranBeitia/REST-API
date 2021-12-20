@@ -11,7 +11,9 @@ const cors = require('cors')
 // connect mongo
 mongoose.Promise = global.Promise
 mongoose.connect('mongodb://127.0.0.1:27017/REST-APIS', {
+	useUnifiedTopology: true,
 	useNewUrlParser: true,
+	autoIndex: true,
 })
 
 // create server
