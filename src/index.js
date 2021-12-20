@@ -5,6 +5,7 @@ const fileUpload = require('express-fileupload')
 const clientRouter = require('./routes/client.routes')
 const productRouter = require('./routes/product.routes')
 const orderRouter = require('./routes/order.routes')
+const userRouter = require('./routes/user.routes')
 
 const cors = require('cors')
 
@@ -32,6 +33,7 @@ app.use(cors())
 app.use(clientRouter)
 app.use(productRouter)
 app.use(orderRouter)
+app.use(userRouter)
 
 // port
 app.listen(5000)
