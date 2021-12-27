@@ -35,5 +35,8 @@ app.use(productRouter)
 app.use(orderRouter)
 app.use(userRouter)
 
+// public
+app.use(express.static('src/uploads'))
+
 // port
 app.listen(5000)

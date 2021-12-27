@@ -1,6 +1,9 @@
 const express = require('express')
 const clientRouter = express.Router()
 const clientController = require('../controllers/clientController')
+const auth = require('../middleware/auth')
+
+// clientRouter.use(auth)
 
 // add new clients by POST
 clientRouter.post('/clients', clientController.newClient)
